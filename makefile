@@ -13,7 +13,7 @@ LDFLAGS  =-lm
 all: $(TARGET)
 
 $(TARGET): $(OBJS) $(HEADS)
- tab $(CXX) $(LDFLAGS) -o $@ $(OBJS)
+ $(CXX) $(LDFLAGS) -o $@ $(OBJS)
  
 run:all
  @./$(TARGET)
